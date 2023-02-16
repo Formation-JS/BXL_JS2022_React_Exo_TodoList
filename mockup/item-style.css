@@ -1,0 +1,73 @@
+/* Animated border => Rainbow 🌈 */
+.task-item {
+	--angle: 0deg;
+	border: 2px solid transparent;
+    border-radius: 20px;
+    
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(white, white), 
+                      conic-gradient(from var(--angle), red, yellow,yellow, lime,lime, aqua,aqua, blue,blue, magenta,magenta, red);
+    background-origin: border-box;
+    background-clip: content-box, padding-box, border-box;
+
+	animation: 30s rotate linear infinite;
+}
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* Task - Global */
+.task-item {
+    padding: 5ex 10ex;
+    display: flex;
+    flex-direction: row;
+}
+
+.task-item:not(:last-child) {
+    margin-bottom: 5ex;
+
+}
+
+/* Task - Info */
+.task-item > div:nth-child(1) {
+    flex-grow: 1;
+}
+
+.task-item > div:nth-child(1) > p {
+    margin: 0;
+}
+
+.task-item > div:nth-child(1) > p:nth-child(1) {
+    font-size: 1.2em;
+}
+
+.task-item > div:nth-child(1) > p:nth-child(2) {
+    color: gray;
+}
+
+/* Task - Action */
+.task-item > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.task-item > div:nth-child(2) > button:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+/* Task - Completed */
+.task-completed {
+    background-image: repeating-linear-gradient(-45deg, #eee, #eee 20px, #fff 20px, #fff 40px), 
+                      repeating-linear-gradient(-45deg, #eee, #eee 20px, #fff 20px, #fff 40px), 
+                      linear-gradient(gray, gray);
+}

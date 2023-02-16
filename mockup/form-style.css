@@ -1,0 +1,45 @@
+.task-form {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.task-form > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.task-form > div > label {
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.task-form > div > label::after {
+    content: ':';
+    margin-right: 0.5ch;
+    margin-left: 0.5ch;
+}
+
+.task-form > div > input, .task-form > div > textarea {
+    flex-grow: 1;
+}
+
+.task-form > div > textarea {
+    height: 36ex;
+}
+
+.task-form > div:not(:last-child) {
+    margin-bottom: 3ex;
+}
+
+.task-form > div:last-child  {
+    justify-content: flex-start ;
+}
+
+.task-form > div:last-child > button  {
+    margin-left: auto;
+}

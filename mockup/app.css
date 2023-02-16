@@ -1,0 +1,36 @@
+body {
+    font-family: 'Acme', sans-serif;
+    margin: 0;
+}
+
+textarea, input, select, button {
+    font-family: 'Acme', sans-serif;
+    resize: none;
+    border: none;
+    outline: 1px solid black;
+}
+
+textarea:focus, input:focus, select:focus, button:focus {
+    outline: 2px double #820da2;
+    border: none;
+}
+
+textarea::placeholder, input::placeholder {
+    color: #9c06c1;
+    text-align: end;
+    margin-right: 0.5ch;
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+
+
+button:hover {
+    background-color: gray;
+    color: snow;
+}
+
+button:active {
+    outline: thin solid #820da2;
+    background-color: #9c06c1;
+    color: snow;
+}
