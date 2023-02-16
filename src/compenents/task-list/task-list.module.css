@@ -71,3 +71,9 @@
                       repeating-linear-gradient(-45deg, #eee, #eee 20px, #fff 20px, #fff 40px), 
                       linear-gradient(gray, gray);
 }
+
+/* Task - Urgent */
+.task-urgent {
+    color: crimson;
+    font-weight: bold;
+}

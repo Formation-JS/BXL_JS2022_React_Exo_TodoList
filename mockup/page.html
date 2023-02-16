@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="form-style.css">
     <link rel="stylesheet" href="item-style.css">
@@ -23,8 +23,7 @@
     <form class="task-form">
         <div>
             <label for="name">Nom</label>
-            <input id="name" type="text" placeholder="Obligatoire" 
-                class="test">
+            <input id="name" type="text" placeholder="Obligatoire">
         </div>
         <div>
             <label for="desc">Description</label>
@@ -42,28 +41,30 @@
     </form>
 
     <h2>List de tache</h2>
+    <div>
 
-    <article class="task-item">
-        <div>
-            <p>Le nom de la tache</p>
-            <p>La description</p>
-        </div>
-        <div>
-            <button>Terminer</button>
-            <button>Ajouter</button>
-        </div>
-    </article>
+        <article class="task-item">
+            <div>
+                <p>Le nom de la tache</p>
+                <p>La description</p>
+            </div>
+            <div>
+                <button>Terminer</button>
+                <button>Ajouter</button>
+            </div>
+        </article>
 
-    <article class="task-item task-completed">
-        <div>
-            <p>Le nom de la tache</p>
-            <p>La description</p>
-        </div>
-        <div>
-            <button>Terminer</button>
-            <button>Ajouter</button>
-        </div>
-    </article>
+        <article class="task-item task-done">
+            <div>
+                <p>Le nom de la tache</p>
+                <p>La description</p>
+            </div>
+            <div>
+                <button>Terminer</button>
+                <button>Supprimer</button>
+            </div>
+        </article>
+    </div>
 
 </body>
 
