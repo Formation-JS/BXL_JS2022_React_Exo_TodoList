@@ -1,0 +1,10 @@
+.main {
+    font-size: 2rem;
+    background-color: blueviolet;
+    color: bisque;
+    padding: 10px;
+} 
+
+.main p {
+    margin: 0;
+}
