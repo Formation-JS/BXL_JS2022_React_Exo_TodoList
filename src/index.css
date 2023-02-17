@@ -34,3 +34,7 @@ button:active {
   background-color: #9c06c1;
   color: snow;
 }
+
+p {
+  white-space: pre-line;
+}
